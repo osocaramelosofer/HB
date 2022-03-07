@@ -1,19 +1,22 @@
 <template>
-  <div id="app">
+  <div id="app" class="container">
     <HelloWorld msg="Happy Birthday to the most cute  n' funny girl in my life 💙."/>
     <mosaico-component />
+    <footer-component />
   </div>
 </template>
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
 import MosaicoComponent from './components/MosaicoComponent.vue'
+import FooterComponent from './components/footerComponent.vue'
 
 export default {
   name: 'App',
   components: {
     HelloWorld,
     MosaicoComponent,
+    FooterComponent
   },
   data(){
     return {}
@@ -42,4 +45,5 @@ html {
   padding: 0;
 
 }
+
 </style>

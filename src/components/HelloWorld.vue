@@ -1,13 +1,11 @@
 <template>
   <div class="hello">
-    
-    <span>{{ msg }}</span>
-    <would-you whatever="Friend"/>
+    <p>{{ msg }}</p>
   </div>
 </template>
 
 <script>
-import WouldYou from './WouldYou.vue'
+
 
 export default {
   name: 'HelloWorld',
@@ -15,7 +13,7 @@ export default {
     msg: String
   },
   components: {
-    WouldYou,
+
   }
 }
 </script>
@@ -39,7 +37,10 @@ li {
 a {
   color: #42b983;
 }
-span {
+.hello {
+  margin-top: 30px;
+}
+p {
   display: block;
   font-family: monospace;
   white-space: nowrap;
@@ -49,9 +50,16 @@ span {
   overflow: hidden;
   color: white;
   margin: auto;
+  font-size: 25px;
+  font-weight: 600
 }
 
 @keyframes typing {
   from { width: 0 }
+}
+@media (max-width: 600px) {
+  .hello {
+    word-wrap: break-word;
+  }
 }
 </style>

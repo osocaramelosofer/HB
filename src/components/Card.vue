@@ -2,16 +2,12 @@
   <div class="flip-card">
     <div class="flip-card-inner">
       <div class="flip-card-front">
-        <img :src="require(`@/assets/${image}`)" alt="Avatar">
+        <img :src="require(`@/assets/${image}`)" alt="Avatar" class="photo">
       </div>
       <div class="flip-card-back">
-        <h2 class="card__title"><span>{{ title }}:</span> The plants are green, the sky is blue, & I'm crazy for you.</h2>
-        <p class="date" v-if="created_at">Together since {{ created_at }}👦💙👧</p>
-        <div class="publish__container">
-          <i>X</i>
-          <p class="publisher__name">Sohal Welnab</p>
+        <div class="photo-container">
+          <img :src="require(`@/assets/${image2}`)" alt="Avatar" class="photo">
         </div>
-        <p v-if="description">{{ description }}</p>
       </div>
     </div>
   </div>
@@ -23,7 +19,7 @@ export default {
   props: {
     image: String,
     title: String,
-    created_at: String,
+    image2: String,
     description: String
   },
   mounted() {
@@ -74,7 +70,12 @@ export default {
   background-color: #bbb;
   color: black;
 }
-.flip-card-front img {
+.photo-container {
+  position: relative;
+  width: 250px;
+  height: 250px;
+}
+.photo {
   width: 100%;
   height: 100%;
   object-fit: cover;
