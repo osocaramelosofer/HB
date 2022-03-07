@@ -5,7 +5,7 @@
         Y para ser honesto no estoy seguro si algun dia terminas de concoer a alguien, 
         porque apesar de que lleves anos conociendo a alguien, cada dia hay detalles en su persona
         que antes no sabias, ni siquiera ella misma. Pero desde que crei haber conocido a Iridian nunca mas me dieron ganas
-        de alejarme de ella" (Fernando, 2021).
+        de alejarme de ella" (Fernando, 2021). 
     </p>
   </div>
 </template>
